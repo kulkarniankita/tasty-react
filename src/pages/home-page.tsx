@@ -28,7 +28,10 @@ function HomePage() {
     getRecipes();
   }, []);
 
-  const handleOnBadgeClick = (e, cuisine: string) => {
+  const handleOnBadgeClick = (
+    e: React.MouseEvent<HTMLDivElement, MouseEvent>,
+    cuisine: string
+  ) => {
     e.preventDefault();
     setBadge(cuisine);
   };
